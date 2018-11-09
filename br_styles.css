@@ -47,14 +47,18 @@ nav {
 #maincontent {
   border-left: solid red 5px;
   border-right: solid red 5px;
+  background-image: radial-gradient(circle 400px at top right, gold 20%, white 30%);
 }
-
-/* Welcome Styles */
 
 h1 {
+  text-shadow: 2px 1px gray;
   font-size: 2em;
   text-align: center;
+  padding: 10px
 }
+
+
+/* Welcome Styles */
 
 .floatleft {
   float: left;
@@ -72,13 +76,14 @@ h1 {
 
 /* Footer Styles */
 #footer {
+  border-left: solid black 5px;
+  border-right: solid black 5px;
   box-shadow: 0px 10px 30px;
   padding: 4em;
   background-color: rgb(105, 105, 105);
 }
 
 footer {
-
   grid-template-columns: 1fr 1fr 1fr;
 }
 
