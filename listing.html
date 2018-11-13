@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--
+    New Perspectives on HTML5 and CSS3, 7th Edition
+    Tutorial 4
+    Case Problem 4
+    
+    Browyer Realty Listing 2048
+    Author: Chad Williams
+    Date:   11.7.18
+
+    Filename: br_listing2048.html
+   -->
+    <title>Browyer Realty</title>
+    <link rel="stylesheet" href="br_reset.css">
+    <link rel="stylesheet" href="br_styles.css">
+    <link rel="stylesheet" href="linkhover.css">
+</head>
+
+<body>
+    <header>
+        <img src="br_logo.png" alt="">
+
+        <!-- Begin Dropdown Nav -->
+        <nav>
+            <!-- Div encases dropdown button -->
+            <div class="dropdown" class="sticky">
+                <!-- Button with class of dropbtn displays Buying -->
+                <button class="dropbtn"><a href="#">Buying <b class="caret"></b></a></button>
+                <!-- Div encasing dropdown button links -->
+                <div class="dropdown-content">
+                    <a href="#">Residential</a>
+                    <a href="#">Business</a>
+                    <a href="#">Rentals</a>
+                    <a href="#">Properties</a>
+                </div>
+                <!-- Div encasing dropdown button links ends -->
+            </div>
+            <!-- Div encases dropdown button ends -->
+            <div class="dropdown" class="sticky">
+                <button class="dropbtn"><a href="#">Selling <b class="caret"></b></a></button>
+                <div class="dropdown-content">
+                    <a href="#">Appraisals</a>
+                    <a href="#">Online Quotes</a>
+                </div>
+            </div>
+
+
+            <div class="dropdown" class="sticky">
+                <button class="dropbtn"><a href="#">Culture <b class="caret"></b></a></button>
+                <div class="dropdown-content">
+                    <a href="#">About Us</a>
+                    <a href="#">Offices</a>
+                </div>
+            </div>
+
+            <div class="dropdown" class="sticky">
+                <button class="dropbtn"><a href="#">Agents <b class="caret"></b></a></button>
+                <div class="dropdown-content">
+                    <a href="#">Contact Us</a>
+                    <a href="#">Online Chat</a>
+                </div>
+            </div>
+
+            <div class="dropdown" class="sticky">
+                <button class="dropbtn"><a href="#">Offices</a></button>
+            </div>
+
+            </div>
+            <!-- End Dropdown Nav -->
+
+
+        </nav>
+    </header>
+
+    <div id="maincontent">
+        <div id="listingpage">
+            <h1>
+                Riverdale Area
+            </h1>
+            <p id="listingdesc">
+                Paradise found! This custom-built brand new home sits proudly on a 6.8-acre
+                high wooded site overlooking a 300-acre nature conservancy. The setting is
+                exceptional, and the home is every bit as exciting! A bright, open layout is
+                enhanced by vaulted ceilings, hardwood and tumbled, ceramic flooring, custom
+                maple cabinetry, upgraded fixtures, numerous windows, and incredible views.
+
+                There is much more. The property includes a 40x54 storage building - perfect
+                for a large boat and machinery. An exposed walkout on lower level leads down to
+                a beautiful wooded area.
+
+                An extra bathroom, bedroom, and family room can be added to the unfinished
+                basement for more living space.
+            </p>
+
+            <aside class="info">
+                <h2>Info</h2>
+                Address:
+                <br>
+                Listing 2048
+                <br>
+                414 Mandel Road
+                <br>
+                Owatonna, MN 55060
+                <br>
+                <br>
+                List Price:
+                <h2>
+                    $412,800
+                </h2>
+                <br>
+                Square Feet: 3,300
+                <br>
+                Bedrooms: 4
+                <br>
+                Baths: 2-1/2
+            </aside>
+        </div>
+
+        <div id="imagewrapper">
+            <h2>
+                Images
+            </h2>
+            <div class="images">
+                <img class="zoom" src="br_photo1.png" alt="">
+                <img class="zoom" src="br_photo2.png" alt="">
+                <img class="zoom" src="br_photo3.png" alt="">
+                <img class="zoom" src="br_photo4.png" alt="">
+                <img class="zoom" src="br_photo5.png" alt="">
+                <img class="zoom" src="br_photo6.png" alt="">
+                <img class="zoom" src="br_photo7.png" alt="">
+                <img class="zoom" src="br_photo8.png" alt="">
+                <img class="zoom" src="br_photo9.png" alt="">
+            </div>
+        </div>
+
+        <div id="newlistings">
+            <h1>New Listings</h1>
+            <div id="listings">
+                <div class="listing">
+                    <a class="listinglink" href="#">
+                        <h1 class="listingh1">Riverdale Area</h1>
+                    </a>
+                    <div class="listinginfo">
+                        <!-- Listing Price -->
+                        <a class="listinglink" href="#">$412,000</a>
+                        <br>
+                        <!-- Bedroom/bathroom info -->
+                        <a class="listinglink" href="#">
+                            4bd 2-1/2ba
+                        </a>
+                    </div>
+                </div>
+                <div class="listing">
+                    <!-- Listing Name -->
+                    <a class="listinglink" href="#">
+                        <h1 class="listingh1">Riverdale Area</h1>
+                    </a>
+                    <!-- Picture of listing -->
+                    <!-- Seperate Div "listinginfo" containing listing price bedroom and baths -->
+                    <div class="listinginfo">
+                        <!-- Listing Price -->
+                        <a class="listinglink" href="#">$412,000</a>
+                        <br>
+                        <!-- Bedroom/bathroom info -->
+                        <a class="listinglink" href="#">
+                            4bd 2-1/2ba
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="listing">
+                    <!-- Listing Name -->
+                    <a class="listinglink" href="#">
+                        <h1 class="listingh1">Riverdale Area</h1>
+                    </a>
+                    <!-- Picture of listing -->
+                    <!-- Seperate Div "listinginfo" containing listing price bedroom and baths -->
+                    <div class="listinginfo">
+                        <!-- Listing Price -->
+                        <a class="listinglink" href="#">$412,000</a>
+                        <br>
+                        <!-- Bedroom/bathroom info -->
+                        <a class="listinglink" href="#">
+                            4bd 2-1/2ba
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="footer">
+        <footer>
+            <div id="column1">
+                <a href="#">Contact Us</a>
+                <a href="#">Listings</a>
+                <a href="#">Newsletter</a>
+            </div>
+
+            <div id="column2">
+                <a href="#">Contact Us</a>
+                <a href="#">Listings</a>
+                <a href="#">Newsletter</a>
+            </div>
+
+            <div id="column3">
+                <a href="#">Contact Us</a>
+                <a href="#">Listings</a>
+                <a href="#">Newsletter</a>
+            </div>
+
+        </footer>
+    </div>
+
+</body>
+
+</html>

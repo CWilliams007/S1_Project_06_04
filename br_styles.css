@@ -74,6 +74,60 @@ h1 {
 
 /* Offices Styles */
 
+/* New Listings Styles */
+#newlistings {
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+#listings {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 30px;
+}
+
+.listing {
+  border: solid black 4px;
+  background-image: url("br_photo2.png");
+  background-size: cover;
+  padding-bottom: 170px;
+}
+
+.listing img {
+  display: block;
+  margin: 0 auto;
+}
+
+.listingh1 {
+  background-color: rgba(255, 255, 255, .8);
+  position: relative;
+  top: 5px;
+  margin: 0;
+  font-size: 1.6em;
+}
+
+.listinglink {
+  text-decoration: none;
+  color: black;
+}
+
+.listinglink:hover {
+  text-decoration: underline;
+}
+
+.listinginfo {
+  background-color: rgba(255, 255, 255, .8);
+  position: relative;
+  top: 170px;
+}
+
+.listinginfo a {
+  font-size: 1.2em;
+  font-weight: bold;
+  display: block;
+  padding: 0;
+}
+
 /* Footer Styles */
 #footer {
   border-left: solid black 5px;
@@ -90,6 +144,7 @@ footer {
 footer div a {
   text-decoration: none;
   color: blanchedalmond;
+  font-size: .9em;
 }
 
 footer div a:hover,
@@ -99,3 +154,50 @@ footer div a:active {
 }
 
 /*  */
+
+/* Listing HTML styles */
+
+/* Aside Styles */
+p#listingdesc {
+  padding-top: 20px;
+  width: 75%;
+  float: right;
+}
+
+.info {
+  font-size: .9em;
+  float: left;
+  width: 20%;
+  padding-left: 30px;
+  border: solid red 5px;
+}
+
+#imagewrapper {
+  clear: both;
+  margin: 0 auto;
+  width: 81%;
+  box-shadow: 0px 3px 2px;
+}
+
+#imagewrapper h2 {
+  text-align: center;
+}
+
+.images {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+
+
+/* Zoom image style */
+.zoom {
+  transition: transform .2s;
+  /* Animation */
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.2);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
