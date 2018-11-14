@@ -8,40 +8,52 @@
    Browyer Realty Layout Styles
   Author: Chad Williams
     Date:   11.7.18
-	
+	Purpose: Main CSS file for project, coexists with linkhover.css
    Filename: br_styles.css
 
 */
 
+/* Google Fonts, Imported. */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+/* font-family: 'Roboto', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+/* font-family: 'Raleway', sans-serif; */
+/* End Google Fonts */
+
+
+/* Structural Styles */
+/* Sets HTML Background Color and width/height of User screen */
 html {
   width: 100%;
   height: 100%;
   background-color: whitesmoke;
 }
 
+/* Centers Body element, sets width to 80% of full client screen, background color white, 
+   adds box shadow to left&right sides, and sets base font to roboto */
 body {
   margin: 0 auto;
   width: 80%;
   background-color: white;
   box-shadow: -10px 0px 30px, 10px 0px 30px;
+  font-family: 'Roboto', sans-serif;
 }
 
+/* Centers header element, and sets background image to paper supplied by client for the logo. */
 header {
   margin: 0 auto;
   background-image: url("br_paper.png");
 }
 
-.center {
-  margin: auto;
-  width: 50%;
-  border: 3px solid green;
-  padding: 10px;
-}
-
+/* End Structural Styles */
 /* Nav Styles */
+/* Sets background color of nav to red */
 nav {
   background-color: red;
 }
+
+/* End Nav Styles, more in linkhover */
 
 /* Maincontent Styles */
 #maincontent {
@@ -50,42 +62,105 @@ nav {
   background-image: radial-gradient(circle 400px at top right, gold 20%, white 30%);
 }
 
+/* End Maincontent Styles */
+
+/* Welcome Styles */
+/* Alters h1 elements to display a text-shadow, font size, centers text, adds padding, and changes font to Raleway */
 h1 {
   text-shadow: 2px 1px gray;
   font-size: 2em;
   text-align: center;
-  padding: 10px
+  padding: 10px 10px 0px 10px;
+  font-family: 'Raleway', sans-serif;
 }
 
-
-/* Welcome Styles */
-
-.floatleft {
-  float: left;
+/* Class image1 affects a empty div element sets height&width, sets the background image to the smiling team
+   and forces it to cover the element*/
+.image1 {
+  height: 400px;
+  width: 100%;
+  background-image: url("smilingteam3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.clearright {
-  clear: right;
+/* Alters the welcoming paragraph, centering it, editing line height, padding to the bottom and top. */
+#welcome p {
+  padding-top: 30px;
+  font-size: 1.2em;
+  padding-bottom: 90px;
+  width: 85%;
+  margin: 0 auto;
+  line-height: 1.5em;
 }
 
-.clearboth {
-  clear: both;
+/* Affects hr elements shortening their width to 10% of users screens, centering it and adding some margin to the top */
+hr {
+  width: 10%;
+  margin: 0 auto;
+  margin-top: 10px;
 }
 
+/* End Welcome Styles */
 /* Offices Styles */
+/* Class of image2 affects a empty div element setting the height and width and
+ adding a background image forcing the image to cover the elements new specified height&width */
+.image2 {
+  height: 400px;
+  width: 100%;
+  background-image: url("offices.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+/* Description lists with the ID offices will have larger font sizes and centers the element */
+#offices dl {
+  font-size: 1.2em;
+  margin: 0 auto;
+  width: 65%;
+}
+
+/* Description terms, more top padding, larger letters and emboldened */
+#offices dt {
+  padding-top: 10px;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+/* Description descriptions now have more top padding */
+#offices dd {
+  padding-top: 10px;
+}
+
+/* Links in Description lists in descriptions will have no underlining and will be in goldenrod color*/
+#offices dl dd a {
+  text-decoration: none;
+  color: goldenrod;
+
+}
+
+/* Links in Description lists in descriptions will have underlining and will be in gold color when hovered*/
+#offices dl dd a:hover,
+#offices dl dd a:active {
+  color: gold;
+  text-decoration: underline;
+}
+
+/* End Offices Styles */
 /* New Listings Styles */
 #newlistings {
   padding-bottom: 40px;
   padding-top: 40px;
 }
 
+/* Sets up a grid for the listings at the bottom of the page */
 #listings {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding-top: 30px;
 }
 
+/* Adds a solid black border around the new listings grid and adds a background image to each one. */
 .listing {
   border: solid black 4px;
   background-image: url("br_photo2.png");
@@ -93,6 +168,7 @@ h1 {
   padding-bottom: 170px;
 }
 
+/* Forces images in listings to display as block and centers them in the element. */
 .listing img {
   display: block;
   margin: 0 auto;
@@ -128,8 +204,9 @@ h1 {
   padding: 0;
 }
 
+/* End New Listings Styles */
 /* Footer Styles */
-#footer {
+.footer {
   border-left: solid black 5px;
   border-right: solid black 5px;
   box-shadow: 0px 10px 30px;
@@ -137,14 +214,22 @@ h1 {
   background-color: rgb(105, 105, 105);
 }
 
-footer {
-  grid-template-columns: 1fr 1fr 1fr;
+footer div {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.copyright {
+  position: relative;
+  top: 100px;
+  right: 50px;
+  color: black;
 }
 
 footer div a {
   text-decoration: none;
   color: blanchedalmond;
-  font-size: .9em;
+  font-size: 1em;
 }
 
 footer div a:hover,
@@ -153,23 +238,44 @@ footer div a:active {
   color: blanchedalmond;
 }
 
-/*  */
+/* End Footer Styles */
 
-/* Listing HTML styles */
-
+/* listing.html Styles */
 /* Aside Styles */
 p#listingdesc {
-  padding-top: 20px;
+  padding-top: 30px;
   width: 75%;
   float: right;
+  padding-right: 100px;
+  height: 300px;
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+
+.firstcharacter {
+  color: #903;
+  float: left;
+  font-family: Georgia;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+
+aside {
+  padding-left: 20px;
 }
 
 .info {
   font-size: .9em;
-  float: left;
-  width: 20%;
   padding-left: 30px;
-  border: solid red 5px;
+  width: 20%;
+  height: 300px;
+}
+
+.info h2 {
+  font-size: 1.3em;
 }
 
 #imagewrapper {
@@ -188,16 +294,16 @@ p#listingdesc {
   padding-right: 5px;
 }
 
+/* End Aside Styles */
 
 
 /* Zoom image style */
 .zoom {
   transition: transform .2s;
-  /* Animation */
   margin: 0 auto;
 }
 
 .zoom:hover {
-  transform: scale(1.2);
-  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.4);
+  /* (140% zoom on hover) */
 }
